@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-principal {
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  padding-right: 420px;
+  color: black;
+}
+
+.pad-logo {
+  padding-left: 590px;
+}
+
+.pad-footer {
+  border-radius: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.pad_promi {
+  background-color: #8a2b2f;
+  padding-top: 40px;
+  color: #000000;
+}
+
+.pad-y {
+  padding-top: 10%;
+}
+
+.boton {
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.boton_solo {
+  padding: 10px 25px;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.pad-new {
+  padding-top: 3%;
+}
+
+.pad-izqu {
+  padding-left: 20%;
+}
+
+.pad-ssd {
+  padding-top: 15%;
+}
+
+.pad-right {
+  padding-right: 50%;
+}
+
+.pad-l {
+  padding-left: 3%;
+}
+
+.padf {
+  padding-left: 10%;
+}
+
+i {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Conte {
+  background-color: #8a2b2f;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.Contegrs {
+  background-color: #323232;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.pad-rrs {
+  padding-left: 100px;
+}
+
+.pad-topss {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.pad-lol {
+  padding-left: 120px;
+}
+
+.pad-topess {
+  padding-top: 65px;
+  padding-left: 180px;
+}
+
+.pad-led {
+  padding-top: 17px;
+}
+
+/*-------------------------------------------------------------- 
+
+  # GALERÍA 2 COMPLEJA 
+
+  --------------------------------------------------------------*/
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: var(--color-principal);
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(17, 17, 17, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(17, 17, 17, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #fff;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
